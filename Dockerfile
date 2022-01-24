@@ -14,5 +14,3 @@ RUN pip install --upgrade pip
 
 COPY --chown=usr:usr requirements.txt requirements.txt
 RUN pip install --user -r requirements.txt
-
-COPY --chown=usr:usr . .
