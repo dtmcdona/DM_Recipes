@@ -8,6 +8,11 @@ Once you have installed docker, run this command:
 docker build .
 ```
 
+To start up the postgres db container and app container please use:
+```commandline
+docker-compose up
+```
+
 Any commands for Django should be run through docker-compose:
 ```commandline
 docker-compose run app sh -c "{YOUR DJANGO COMMAND HERE}"

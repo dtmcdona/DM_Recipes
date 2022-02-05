@@ -21,4 +21,4 @@ RUN pip install -r requirements.txt
 RUN adduser -D usr
 USER usr
 
-RUN python manage.py test core.tests --keepdb
+RUN python manage.py test core.tests
