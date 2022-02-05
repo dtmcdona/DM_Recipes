@@ -17,4 +17,4 @@ USER usr
 COPY --chown=usr:usr requirements.txt /app/requirements.txt
 RUN pip install -r requirements.txt
 
-RUN python manage.py test core.tests.test_model
+RUN python manage.py test core.tests --keepdb
