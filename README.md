@@ -13,14 +13,19 @@ To start up the postgres db container and app container please use:
 docker-compose up
 ```
 
+To stop all containers please use:
+```commandline
+docker-compose down
+```
+
 Any commands for Django should be run through docker-compose:
 ```commandline
-docker-compose run app sh -c "{YOUR DJANGO COMMAND HERE}"
+docker-compose run --rm app sh -c "{YOUR DJANGO COMMAND HERE}"
 ```
 
 This project is constructed for test driven development and the command to test the models is done as follows:
 ```commandline
-docker-compose run app sh -c "python manage.py test core.tests"
+docker-compose run app sh -c "python manage.py test"
 ```
 All of the tests should be kept in core/tests directory.
 
