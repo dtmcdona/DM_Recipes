@@ -3,6 +3,11 @@ Recipe cookbook django rest api
 
 You need to install docker before running this project.
 
+To run unit tests and flake8 run this command:
+```angular2html
+docker-compose run -rm app sh -c "python manage.py test && flake8"
+```
+
 Once you have installed docker, run this command:
 ```
 docker build .
