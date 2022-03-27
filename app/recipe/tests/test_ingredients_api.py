@@ -40,7 +40,6 @@ class PrivateIngredientsApiTests(TestCase):
     def test_retrieve_ingredients(self):
         """Test retrieving ingredients"""
         Ingredient.objects.create(user=self.user, name='Beef')
-        Ingredient.objects.create(user=self.user, name='Chicken')
 
         res = self.client.get(INGREDIENTS_URL)
 

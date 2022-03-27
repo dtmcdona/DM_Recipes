@@ -87,7 +87,7 @@ DATABASES = {
         'PORT': 5432,
         'TEST': {
             'NAME': 'mytestdatabase',
-            'MIRROR': 'default',
+            #'MIRROR': 'default',  # This will mirror the data in live database
         },
     }
 }
